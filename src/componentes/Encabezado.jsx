@@ -3,7 +3,7 @@ import React from 'react';
 const Encabezado = () => {
     return (
         <div>
-        Soy el encabezado de la editorial
+        Soy el encabezado del almacén
         </div>
     );
 }

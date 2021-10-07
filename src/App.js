@@ -10,18 +10,18 @@ import Producto from "./componentes/Producto.jsx";
 function App() {
 
 const [productos, guardarProductos] = useState([
-    {id:1, nombre:"Diccionario Inglés-Español", precio:550},
-    {id:2, nombre:"Recetas de Cocina Peruana", precio:1220},
-    {id:3, nombre:"El señor de los anillos", precio:3499},
-    {id:4, nombre:"Python Cookbook", precio:5250},
+    {id:1, nombre:"Yerba Mate", precio:550},
+    {id:2, nombre:"Tomate Triturado", precio:420},
+    {id:3, nombre:"Lentejas x kilo", precio:349},
+    {id:4, nombre:"Arroz Integral x kilo", precio:525},
 ]);
 
   return (
     <fragment>
         <Encabezado />
-        Editorial BitBooks - Compra online
-        {productos.map( libro =>
-        <Producto producto={libro} />
+        Almacén Orgánico - compra online
+        {productos.map( producto =>
+        <Producto producto={producto} />
         )}
         <Pie fecha={2021}/>
     </fragment>
