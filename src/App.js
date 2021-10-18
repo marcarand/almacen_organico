@@ -14,9 +14,9 @@ const [productos] = useState([
     {id:3, articulo:"Lentejas x kilo", precio:349},
     {id:4, articulo:"Arroz Integral x kilo", precio:525},
     {id:5, articulo:"Harina Integral x kilo", precio:180},
-    {id:6, articulo:"Hongos de Pino x 100gr.", precio:525},
+    {id:6, articulo:"Hongos de Pino x 100gr.", precio:635},
     {id:7, articulo:"Tomates secos x 100gr.", precio:490},
-    {id:8, articulo:"Azúcar mascabo x kilo", precio:525}
+    {id:8, articulo:"Azúcar mascabo x kilo", precio:235}
 ]);
 
 const [changuito, agregarProducto, eliminarProducto] = useState([]);
