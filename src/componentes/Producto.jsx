@@ -20,22 +20,37 @@ const Producto = ({producto, productos, changuito, agregarProducto}) => {
 
     return (
         <Fragment>
-            <div>
-               {id} | {articulo} | $ {precio}
                 {
                     productos
                     ?
-                        <button
-                            type="button"
-                            onClick={()=>seleccionarProducto({id})}
-                        >Comprar</button>
+                    <div className="container px-2 py-1">
+                    <div className="row mb-3">
+                          <div className="col-md-4 themed-grid-col">{articulo}</div>
+                          <div className="col-md-2 themed-grid-col">$ {precio}</div>
+                          <div className="col-md-2 themed-grid-col">
+                              <button
+                                type="button"
+                                className="btn btn-outline-primary"
+                                onClick={()=>seleccionarProducto({id})}
+                            >Comprar</button>
+                          </div>
+                    </div>
+                    </div>
                     :
-                        <button
-                            type="button"
-                            onClick={()=>eliminarProducto({id})}
-                        >Eliminar</button>
+                    <div className="container px-2 py-1">
+                    <div className="row mb-3">
+                          <div className="col-md-6 themed-grid-col">{articulo}</div>
+                          <div className="col-md-2 themed-grid-col">$ {precio}</div>
+                          <div className="col-md-2 themed-grid-col">
+                            <button
+                                type="button"
+                                className="btn btn-outline-success"
+                                onClick={()=>eliminarProducto({id})}
+                            >Eliminar</button>
+                          </div>
+                    </div>
+                    </div>
                 }
-            </div>
         </Fragment>
     );
 }
